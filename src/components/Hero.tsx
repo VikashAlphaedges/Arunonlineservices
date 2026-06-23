@@ -87,7 +87,7 @@ export function Hero() {
               className="flex flex-col sm:flex-row gap-6 sm:items-center mt-6"
             >
               <div className="flex flex-col sm:flex-row gap-6">
-                <a href="https://wa.me/919791397392" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-nexus-gold text-white font-bold uppercase text-[11px] tracking-widest transition-all text-center rounded-sm shadow-[0_12px_0_#1e40af] hover:shadow-[0_6px_0_#1e40af] hover:translate-y-[6px] active:shadow-[0_0px_0_#1e40af] active:translate-y-[12px]">
+                <a href="https://wa.me/919791397392" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-nexus-gold text-white font-bold uppercase text-[11px] tracking-widest transition-all text-center rounded-sm shadow-[0_12px_0_#0077b6] hover:shadow-[0_6px_0_#0077b6] hover:translate-y-[6px] active:shadow-[0_0px_0_#0077b6] active:translate-y-[12px]">
                   Schedule Consultation
                 </a>
                 <a href="#services" className="px-8 py-4 bg-[#1e293b] border border-white/10 text-white uppercase text-[11px] tracking-widest transition-all text-center rounded-sm shadow-[0_12px_0_rgba(255,255,255,0.1)] hover:shadow-[0_6px_0_rgba(255,255,255,0.1)] hover:translate-y-[6px] active:shadow-[0_0px_0_rgba(255,255,255,0.1)] active:translate-y-[12px] hover:text-nexus-gold hover:border-nexus-gold/30">

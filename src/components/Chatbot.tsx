@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { MessageSquare, X, Send } from "lucide-react";
+import { Sparkles, X, Send } from "lucide-react";
 
 interface Message {
   role: "user" | "model";
@@ -67,10 +67,10 @@ export function Chatbot() {
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className={`fixed bottom-6 right-24 z-50 bg-[#1e40af] text-white p-4 rounded-full shadow-2xl hover:bg-[#1e3a8a] transition-all duration-300 hover:scale-110 flex items-center justify-center group ${isOpen ? 'hidden' : 'block'}`}
+        className={`fixed bottom-6 right-24 z-50 bg-[#00b4d8] text-white p-4 rounded-full shadow-2xl hover:bg-[#0096c7] transition-all duration-300 hover:scale-110 flex items-center justify-center group ${isOpen ? 'hidden' : 'block'}`}
         aria-label="Open AI Chat"
       >
-        <MessageSquare className="w-7 h-7" />
+        <Sparkles className="w-7 h-7" />
         <span className="absolute right-full mr-4 bg-white text-black text-xs font-semibold px-3 py-1.5 rounded-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-lg pointer-events-none">
           AI Assistant
         </span>
@@ -79,9 +79,9 @@ export function Chatbot() {
       {isOpen && (
         <div className="fixed bottom-6 right-6 sm:right-24 z-50 w-full sm:w-[350px] md:w-[400px] max-w-[calc(100vw-3rem)] h-[500px] max-h-[calc(100vh-6rem)] bg-white rounded-lg shadow-2xl flex flex-col border border-gray-200 overflow-hidden font-sans">
           {/* Header */}
-          <div className="bg-[#1e40af] text-white p-4 flex justify-between items-center rounded-t-lg">
+          <div className="bg-[#00b4d8] text-white p-4 flex justify-between items-center rounded-t-lg">
             <div className="flex items-center gap-2">
-              <MessageSquare className="w-5 h-5" />
+              <Sparkles className="w-5 h-5" />
               <h3 className="font-semibold text-sm">Arun Online AI Assistant</h3>
             </div>
             <button 
@@ -102,7 +102,7 @@ export function Chatbot() {
                 <div 
                   className={`max-w-[80%] rounded-2xl px-4 py-2 ${
                     msg.role === 'user' 
-                      ? 'bg-[#1e40af] text-white rounded-br-none' 
+                      ? 'bg-[#00b4d8] text-white rounded-br-none' 
                       : 'bg-gray-200 text-gray-800 rounded-bl-none'
                   }`}
                   style={{ wordBreak: "break-word" }}
@@ -133,13 +133,13 @@ export function Chatbot() {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="Type your message..."
-              className="flex-1 bg-gray-100 placeholder-gray-500 text-gray-900 rounded-full px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#1e40af]/50"
+              className="flex-1 bg-gray-100 placeholder-gray-500 text-gray-900 rounded-full px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#00b4d8]/50"
               disabled={isLoading}
             />
             <button
               type="submit"
               disabled={!input.trim() || isLoading}
-              className="bg-[#1e40af] text-white p-2 text-sm rounded-full hover:bg-[#1e3a8a] transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center min-w-[40px]"
+              className="bg-[#00b4d8] text-white p-2 text-sm rounded-full hover:bg-[#0096c7] transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center min-w-[40px]"
             >
               <Send className="w-4 h-4" />
             </button>

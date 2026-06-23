@@ -1,4 +1,5 @@
 import { MessageCircle, Phone, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export function Footer() {
   return (
@@ -23,11 +24,11 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3 text-white/40">
                 <Phone className="text-nexus-gold w-4 h-4 shrink-0" />
-                <span className="text-[11px] uppercase tracking-wider">0422 2200604</span>
+                <a href="tel:04222200604" className="text-[11px] uppercase tracking-wider hover:text-nexus-gold transition-colors">0422 2200604</a>
               </li>
               <li className="flex items-center gap-3 text-white/40">
                 <MessageCircle className="text-nexus-gold w-4 h-4 shrink-0" />
-                <span className="text-[11px] uppercase tracking-wider lowercase">WhatsApp: +91 9791397392</span>
+                <a href="https://wa.me/919791397392" target="_blank" rel="noopener noreferrer" className="text-[11px] uppercase tracking-wider hover:text-nexus-gold transition-colors">WhatsApp: +91 9791397392</a>
               </li>
             </ul>
           </div>
@@ -35,10 +36,10 @@ export function Footer() {
           <div>
             <h4 className="text-white text-[11px] uppercase tracking-[0.2em] font-semibold mb-6">Practice Areas</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-white/40 hover:text-nexus-gold text-[11px] uppercase tracking-wider transition-colors">Property Registration</a></li>
-              <li><a href="#" className="text-white/40 hover:text-nexus-gold text-[11px] uppercase tracking-wider transition-colors">Encumbrance Certificates</a></li>
-              <li><a href="#" className="text-white/40 hover:text-nexus-gold text-[11px] uppercase tracking-wider transition-colors">Agreement Drafting</a></li>
-              <li><a href="#" className="text-white/40 hover:text-nexus-gold text-[11px] uppercase tracking-wider transition-colors">Document Validation</a></li>
+              <li><Link to="/services/real-estate-documentation" className="text-white/40 hover:text-nexus-gold text-[11px] uppercase tracking-wider transition-colors">Property Registration</Link></li>
+              <li><Link to="/services/encumbrance-certificate" className="text-white/40 hover:text-nexus-gold text-[11px] uppercase tracking-wider transition-colors">Encumbrance Certificates</Link></li>
+              <li><Link to="/services/preparation-of-agreements" className="text-white/40 hover:text-nexus-gold text-[11px] uppercase tracking-wider transition-colors">Agreement Drafting</Link></li>
+              <li><Link to="/services/document-consulting" className="text-white/40 hover:text-nexus-gold text-[11px] uppercase tracking-wider transition-colors">Document Validation</Link></li>
             </ul>
           </div>
         </div>
